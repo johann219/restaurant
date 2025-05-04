@@ -24,6 +24,30 @@ img, picture, video, canvas, svg {
     max-width: 100%;
 }
 
+@font-face {
+  font-family: 'Cinzel Decorative'; 
+  src: url('../assets/Cinzel_Decorative/CinzelDecorative-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative'; 
+  src: url('../assets/Cinzel_Decorative/CinzelDecorative-Bold.ttf') format('truetype'); 
+  font-weight: 700; 
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cinzel Decorative'; 
+  src: url('../assets/Cinzel_Decorative/CinzelDecorative-Black.ttf') format('truetype'); 
+  font-weight: 900; 
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --parchment-paper: #f5f5dc;
   --parchment-paper-bright: #f5f5ed;
@@ -91,9 +115,10 @@ main {
 .content-block > h1 {
   color: var(--burgundy-dark);
   font-size: 1.25rem;
-  font-weight: bold;
   text-align: center;
   margin-bottom: 0.5rem;
+  font-family: 'Cinzel Decorative', 'Merriweather', sans-serif;
+  font-weight: 900;
 }
 
 .nav-button {
