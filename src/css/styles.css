@@ -108,7 +108,8 @@ main {
   padding: 1rem 2rem;
 }
 
-.content-block {
+.content-block,
+.content-block > p {
   margin-bottom: 1rem;
 }
 
@@ -201,8 +202,5 @@ main {
 
 ul {
   padding-left: 0;
-}
-
-li {
   list-style: none;
 }
