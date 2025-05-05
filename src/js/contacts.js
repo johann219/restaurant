@@ -71,11 +71,9 @@ const createContactsSection = (sectionData) => {
             case CONTENT_TYPE_PARA:
             case CONTENT_TYPE_PARA_BOLD:
                 contentElement = createParagraph(contentItemData);
-                console.log(contentElement);
                 break;
             case CONTENT_TYPE_LIST:
                 contentElement = createList(contentItemData);
-                console.log(contentElement);
                 break;
         }
 
