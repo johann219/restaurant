@@ -204,3 +204,11 @@ ul {
   padding-left: 0;
   list-style: none;
 }
+
+.span-bold {
+  font-weight: bold;
+}
+
+.span-italic {
+  font-style: italic;
+}
