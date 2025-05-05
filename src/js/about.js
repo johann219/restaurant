@@ -42,28 +42,36 @@
 //  </section>
 
 import { aboutData } from './about-data.js';
-import tavernImg from '../assets/tavern-interior.jpg';
 
 const sectionClass = 'content-block';
 const sectionHeaderClass = 'content-block-header';
 
-const newSection = document.createElement('section');
-newSection.classList.add(sectionClass);
+const createAboutPageFragment = () => {
+    const aboutPageFragment = new DocumentFragment();
 
-const newSectionHeader = document.createElement('h1');
-newSectionHeader.classList.add(sectionHeaderClass);
-newSectionHeader.textContent = aboutData[0].header;
+    aboutData.forEach((sectionData) => {
+        const newSection = document.createElement('section');
+        newSection.classList.add(sectionClass);
 
-const newSectionText = document.createElement('p');
-newSectionText.textContent = aboutData[0].text
+        const newSectionHeader = document.createElement('h1');
+        newSectionHeader.classList.add(sectionHeaderClass);
+        newSectionHeader.textContent = sectionData.header;
 
-const newSectionImg = document.createElement('img');
-newSectionImg.src = tavernImg;
-newSectionImg.alt = aboutData[0].imgAlt;
+        const newSectionText = document.createElement('p');
+        newSectionText.textContent = sectionData.text;
 
-newSection.appendChild(newSectionHeader);
-newSection.appendChild(newSectionText);
-newSection.appendChild(newSectionImg);
+        const newSectionImg = document.createElement('img');
+        newSectionImg.src = sectionData.imgUrl;
+        newSectionImg.alt = sectionData.imgAlt;
 
-const content = document.querySelector('#content');
-content.appendChild(newSection);
+        newSection.appendChild(newSectionHeader);
+        newSection.appendChild(newSectionText);
+        newSection.appendChild(newSectionImg);
+
+        aboutPageFragment.appendChild(newSection);
+    });
+
+    return aboutPageFragment;
+};
+
+export { createAboutPageFragment };
