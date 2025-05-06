@@ -1,17 +1,3 @@
-
-//             <section class="content-block">
-//                 <h1 class="content-block-header">Send us Your Word</h1>
-//                     <p>Should you need to reserve a table for your guild, inquire about lost goblets, or simply share tidings, reach us through these modern contrivances or traditional means:</p>
-//                     <p>
-//                         <strong>Email:</strong>
-//                         <a href="mailto:innkeeper@trebuhovo-village.mock">innkeeper@trebuhovo-village.mock</a>
-//                     </p>
-//                     <p>
-//                         <strong>Phone:</strong>
-//                         <a href="tel:+0123-456-7890">+0123-456-7890</a>
-//                     </p>
-//             </section>
-
 const CONTENT_TYPE_PARA = 'paragraph';
 const CONTENT_TYPE_PARA_BOLD = 'paragraph-with-bold';
 const CONTENT_TYPE_LIST = 'list';

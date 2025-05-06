@@ -1,11 +1,3 @@
-//  <section class="content-block">
-//     <h1 class="content-block-header">From Our Village & Valued Neighbours</h1>
-//     <p>
-        
-//     </p>
-//     <img src="./assets/farming.jpg" alt="Farming">
-//  </section>
-
 import tavernImg from '../assets/interior.jpg';
 import bonfireImg from '../assets/bonfire.jpg';
 import farmingImg from '../assets/farming.jpg';
